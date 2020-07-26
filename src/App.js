@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -21,6 +21,7 @@ import About_Activity from './About_Activity';
 import Home from './Home';
 import Notice from './Notice';
 import ReactPlayer from 'react-player';
+import axios from 'axios';
 
 
 
@@ -140,22 +141,11 @@ const social = [
   }
 ];
 
-componentDidMount(){
-  this._dbTest();
-}
-
+//classes = useStyles();
 
 export default function Blog() {
+  
   const classes = useStyles();
-
-  componentDidMount(){
-    this._dbTest();
-  }
-
-  _dbTest = async() => {
-    const res = await axios.get('/api/test');
-    console.log(res.data)
-  }
 
   return (
     <React.Fragment>

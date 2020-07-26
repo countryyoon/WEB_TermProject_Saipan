@@ -15,6 +15,7 @@ import { Slide } from 'react-slideshow-image';
 import './Home.css';
 //import slide from "./slide_2.jpg";//실행오류
 //mport slideImages from "images";
+//import sld1 from './images/slide_1.jpg';
 
 const useStyles = makeStyles(theme => ({
     toolbar: {
@@ -116,12 +117,12 @@ const sections = [
   ];
  */
 const slideImages = [
-  'images/slide_1.JPG',
-  'images/slide_2.JPG',
-  'images/slide_3.JPG',
-  'images/slide_4.JPG',
-  'images/slide_5.JPG',
-  'images/slide_6.JPG'
+  'images/slide_1.jpg',
+  'images/slide_2.jpg',
+  'images/slide_3.jpg',
+  'images/slide_4.jpg',
+  'images/slide_5.jpg',
+  'images/slide_6.jpg'
 ]
 
 const properties = {
@@ -131,29 +132,7 @@ const properties = {
   indicators: true,
   arrows: true
 }
-/*
-const Slideshow = () => {
-    return (
-      <Slide {...properties}>
-        <div className="each-slide">
-          <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
-            <span>Slide 1</span>
-          </div>
-        </div>
-        <div className="each-slide">
-          <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
-            <span>Slide 2</span>
-          </div>
-        </div>
-        <div className="each-slide">
-          <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
-            <span>Slide 3</span>
-          </div>
-        </div>
-      </Slide>
-    )
-}
-*/
+
 const Home = () => {
     const classes = useStyles();
     return(
@@ -185,33 +164,33 @@ const Home = () => {
             </Paper>
             <Slide {...properties}>
             <div className="each-slide">
-              <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
-                <span>Slide 1</span>
+              <div style={{height:'600px',width:'600px','backgroundImage': `url(https://i.ibb.co/zG0WFKx/slide-1.jpg)`}}>
+                {/* <span>Slide 1</span> */}
               </div>
             </div>
             <div className="each-slide">
-              <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
-                <span>Slide 2</span>
+              <div style={{height:'600px',width:'600px','backgroundImage': `url(https://i.ibb.co/0GvKShD/slide-2.jpg)`}}>
+                {/* <span>Slide 2</span> */}
               </div>
             </div>
             <div className="each-slide">
-              <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
-                <span>Slide 3</span>
+              <div style={{height:'600px',width:'600px','backgroundImage': `url(https://i.ibb.co/L6CZXTh/slide-3.jpg)`}}>
+                {/* <span>Slide 3</span> */}
               </div>
             </div>
             <div className="each-slide">
-              <div style={{'backgroundImage': `url(${slideImages[3]})`}}>
-                <span>Slide 4</span>
+              <div style={{height:'600px',width:'600px','backgroundImage': `url(https://i.ibb.co/zRWjNNB/slide-4.jpg)`}}>
+                {/* <span>Slide 4</span> */}
               </div>
             </div>
             <div className="each-slide">
-              <div style={{'backgroundImage': `url(${slideImages[4]})`}}>
-                <span>Slide 5</span>
+              <div style={{height:'600px',width:'600px','backgroundImage': `url(https://i.ibb.co/D73zcSW/slide-5.jpg)`}}>
+                {/* <span>Slide 5</span> */}
               </div>
             </div>
             <div className="each-slide">
-              <div style={{'backgroundImage': `url(${slideImages[5]})`}}>
-                <span>Slide 6</span>
+              <div style={{height:'600px',width:'600px','backgroundImage': `url(https://i.ibb.co/ykqSyQ5/slide-6.jpg)`}}>
+                {/* <span>Slide 6</span> */}
               </div>
             </div>
             </Slide>
